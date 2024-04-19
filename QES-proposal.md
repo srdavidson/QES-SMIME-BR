@@ -2,7 +2,7 @@
 
 #### A. Proposed text
 
-The CA MAY rely upon an eIDAS Qualified Electronic Signature created using a Qualified Certificate issued by a CA bearing the type identifier https://uri.etsi.org/TrstSvc/Svctype/CA/QC/ and the status http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted on the EU Trusted List effective at the time of validation. The Qualified Certificate used in the Qualified Electronic Signature SHALL include the `qcStatement` including the `id-etsi-qct-esign` identifier defined in Section 4.2.3 of ETSI EN 319 412-5.
+The CA MAY rely upon Qualified Electronic Signature per Regulation (EU) 910/2014, created using a Qualified Electronic Signature Certificate issued by a Qualified Trust Service Provider Issuing CA bearing the qualified trust service type "http://uri.etsi.org/TrstSvc/Svctype/CA/QC" and the status "http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted" on the EU Trusted List. The "GRANTED" status must be effective at the time of signing (if the signature is associated with a qualified electronic time stamp) or at the time of validation (if the signature is not associated with a qualified electronic time stamp). The Qualified Signature Certificate used for the Qualified Electronic Signature SHALL include the QCStatements X.509 extension as specified in clauses 4 and 5 of ETSI EN 319 412-5 and SHALL include the `id-etsi-qct-esign` QcType in `esi4-qcStatement-6` as defined in Section 4.2.3 of ETSI EN 319 412-5.
 
 #### B. Background
 
