@@ -4,7 +4,7 @@
 
 If a digital signature is to be used as evidence, the CA or RA SHALL only rely upon the following certificate types:
 
-    a. eIDAS Qualified 
+    1. eIDAS Qualified 
 
     The CA MAY rely upon a signature created using a Qualified Electronic Signature Certificate issued by a trust service  holding the "http://uri.etsi.org/TrstSvc/Svctype/CA/QC" service type and the "http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted" status on an EU Trusted List. The "GRANTED" status must be effective at the time of signing (if the signature is associated with a Qualified electronic time stamp) or at the time of validation (if the signature is not associated with a Qualified electronic time stamp). The signing certificate SHALL include the `esi4-qcStatement-6` Qcstatement as specified in clause 4.2.1 of ETSI EN 319 412-5 incorporating the `id-etsi-qct-esign` QcType as specified in clause 4.2.3 of ETSI EN 319 412-5.
 
